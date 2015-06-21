@@ -59,6 +59,7 @@ int main(int argc, char *args[]) {
 	}
 	//dummy getline to wipe of the extra \n between two matrices
 	getline(in, line);	
+	// be warned
 	
 	for (int i=1 ; i <= n   ; i++) {
 		getline(in, line);		
@@ -73,9 +74,9 @@ int main(int argc, char *args[]) {
 		cout<<endl;
 	}
 	
-	GayleShepley gs;
+	GayleShepley gs(n);
 	gs.run(n,m,f);
-	
+	gs.print();
 	//finally
 	in.close();
 		
