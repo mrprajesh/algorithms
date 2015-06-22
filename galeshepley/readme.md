@@ -15,28 +15,31 @@ in the following order.
 ### output specification or out-file
  
 ### input specifiation
-It must contains number of couples at first line. Followed by two n x n 
+It must contains number of couples in the first line. Followed by two n x n 
 matrices where the first matric represents the men's preference list,the
-next is women preference list. 
+next is women preference list separated by extra line break. 
 
 n
 
-1 2 3 ... n 
+1	 2	 3	 ...	 n 
 
-1 2 3 ... n
+1 	2	 3	 ...	 n
+
+.
+
+.
+
+
+1 	2	 3	...	n 
+
+1 	2	 3	...	n 
+
+1 	2	 3	... n
 
 .
 
 .
 
 
-1 2 3 ... n 
-
-1 2 3 ... n 
-
-1 2 3 ... n
-.
-.
-1 2 3 ... n 
-
+1 	2	 3	... n
 
