@@ -6,7 +6,7 @@
 #include <map>
 #include <vector>
 
-#include "GayleShepley.h"
+#include "GaleShapley.h"
 
 using namespace std;
 
@@ -72,7 +72,7 @@ int main(int argc, char *args[]) {
 		cout<<endl;
 	}
 	
-	GayleShepley gs(n);
+	GaleShapley gs(n);
 	int* match = gs.run(n,m,f);
 	std::ofstream outfile; 
 	string out=args[2];

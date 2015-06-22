@@ -1,15 +1,15 @@
-#include "GayleShepley.h"
+#include "GaleShapley.h"
 
-GayleShepley::GayleShepley(){
+GaleShapley::GaleShapley(){
 	
 }
 
-GayleShepley::~GayleShepley() {
+GaleShapley::~GaleShapley() {
 	
 
 }
 
-GayleShepley::GayleShepley(int n){
+GaleShapley::GaleShapley(int n){
 	num = n;
 	nextUnPropOf = new int[n];
 	
@@ -29,7 +29,7 @@ GayleShepley::GayleShepley(int n){
 	
 }
 
-int* GayleShepley::run(int n, int **m, int **f) {
+int* GaleShapley::run(int n, int **m, int **f) {
 	mlist = m;
 	flist = f;
 	
@@ -77,13 +77,13 @@ int* GayleShepley::run(int n, int **m, int **f) {
 }
 
 	
-void GayleShepley::print() {
+void GaleShapley::print() {
 	
 	for (int j=1 ; j <= num; j++){
 		cout<< j <<" " << matchedWoman[j] << endl;
 	}
 }	
-bool GayleShepley::isProposerBetter(int woman, int prop, int eng) {
+bool GaleShapley::isProposerBetter(int woman, int prop, int eng) {
 	bool yes= false;
 	if(fmap[woman].find(prop)->second < fmap[woman].find(eng)->second) {
 		yes = true;

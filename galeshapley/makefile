@@ -12,8 +12,8 @@ CXXFLAGS = -Wall -g
 #main: main.o Node.o BST.o functions.o
 #	$(CXX) $(CXXFLAGS) -o main main.o Node.o BST.o functions.o
 #
-main: main.o GayleShepley.o
-	$(CXX) $(CXXFLAGS) -o main main.o GayleShepley.o
+main: main.o GaleShapley.o
+	$(CXX) $(CXXFLAGS) -o main main.o GaleShapley.o
 
 # The main.o target can be written more simply
 #
@@ -21,14 +21,14 @@ main: main.o GayleShepley.o
 #	$(CXX) $(CXXFLAGS) -c functions.cpp
 
 #main.o: main.cpp Node.h BST.h
-main.o: main.cpp GayleShepley.h
+main.o: main.cpp GaleShapley.h
 	$(CXX) $(CXXFLAGS) -c main.cpp
 
 #Node.o: Node.h
 #
 #BST.o: BST.h Node.h
 
-GayleShepley.o: GayleShepley.h
+GaleShapley.o: GaleShapley.h
 
 clean:
 	rm *.o main 

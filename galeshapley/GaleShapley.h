@@ -1,5 +1,5 @@
-#ifndef _GAYLESHEPLEY_H
-#define _GAYLESHEPLEY_H
+#ifndef _GALESHAPLEY_H
+#define _GALESHAPLEY_H
 
 #include <iostream>
 #include <list>
@@ -11,7 +11,7 @@
 
 using namespace std;
 
-class GayleShepley{
+class GaleShapley{
 	private:
 		bool computed;
 		bool *isWomanEng;
@@ -26,10 +26,10 @@ class GayleShepley{
 
 		 
 	public:
-		GayleShepley();
-		GayleShepley(int);
+		GaleShapley();
+		GaleShapley(int);
 		
-		~GayleShepley();
+		~GaleShapley();
 		
 		int* run(int  , int **, int **);
 		bool isProposerBetter(int, int, int );
