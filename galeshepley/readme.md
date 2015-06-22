@@ -21,13 +21,14 @@ next is women preference list separated by extra line break.
 
 n
 
-1	 2	 3	 ...	 n 
+1 	2	 3	... n
 
-1 	2	 3	 ...	 n
-.
 .
 
-1 	2	 3	...	n 
+.
+
+
+1 	2	 3	... n
 
 \n
 
