@@ -1,4 +1,4 @@
-Gayle and Shepley Algorithm
+Gale and Shapley Algorithm
 ----------------------------
 
 Given the list of males and females along with their complete preference
