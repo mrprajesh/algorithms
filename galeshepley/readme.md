@@ -13,7 +13,6 @@ main <input-file> <out-file>
 There should be nothing printed on the terminal or contents of out-file
 in the following order. 
 
-### output specification or out-file
  
 ### input specifiation
 It must contains number of couples in the first line. Followed by two n x n 
@@ -25,7 +24,6 @@ n
 
 1 	2	 3	... n
 .
-
 .
 .
 .
@@ -34,7 +32,6 @@ n
 
 1 	2	 3	... n
 .
-
 .
 .
 .
@@ -53,4 +50,15 @@ example
 1 3 2 4	
 1 2 3 4	
 4 1 3 2	
+```
+
+### output specification or out-file
+It has man and woman  pair is each n lines
+
+eg
+```
+1 4
+2 3
+3 2
+4 1
 ```
