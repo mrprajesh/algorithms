@@ -5,6 +5,9 @@
 #include <list>
 #include <map>
 
+#define DEBUG 0
+#define COUT if(DEBUG)cout 
+
 
 using namespace std;
 
@@ -28,7 +31,7 @@ class GayleShepley{
 		
 		~GayleShepley();
 		
-		void run(int  , int **, int **);
+		int* run(int  , int **, int **);
 		bool isProposerBetter(int, int, int );
 		
 		void check();

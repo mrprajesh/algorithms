@@ -1,5 +1,3 @@
-#define DEBUG 1
-#define COUT if(DEBUG)cout 
 
 #include <string>
 #include <sstream>
@@ -75,8 +73,17 @@ int main(int argc, char *args[]) {
 	}
 	
 	GayleShepley gs(n);
-	gs.run(n,m,f);
-	gs.print();
+	int* match = gs.run(n,m,f);
+	std::ofstream outfile; 
+	string out=args[2];
+	outfile.open (out.c_str());
+	
+	for (int j=1 ; j <= n; j++){
+		cout<< j <<" " << match[j] << endl;
+		outfile<< j <<" " << match[j] << endl;
+	}
+	outfile.close();
+	//gs.print();
 	//finally
 	in.close();
 		

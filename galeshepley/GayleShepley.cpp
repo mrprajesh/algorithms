@@ -29,7 +29,7 @@ GayleShepley::GayleShepley(int n){
 	
 }
 
-void GayleShepley::run(int n, int **m, int **f) {
+int* GayleShepley::run(int n, int **m, int **f) {
 	mlist = m;
 	flist = f;
 	
@@ -47,8 +47,9 @@ void GayleShepley::run(int n, int **m, int **f) {
 		int man = unPropMan.front();
 		int windex = nextUnPropOf[man]++;
 		int woman = m[man][windex];
+		COUT <<" man " << man;
 		if(!isWomanEng[woman]){
-			
+			COUT  <<" engg "<< woman <<endl;
 			isWomanEng[woman]=true;
 			
 			matchedWoman[man]=woman;
@@ -58,16 +59,21 @@ void GayleShepley::run(int n, int **m, int **f) {
 		}
 		else {
 			if ( isProposerBetter(woman,man,matchedMan[woman] )){
+				COUT << "ENGG " <<woman <<",  broke of  MAN "<< matchedMan[woman]<<endl;
+				unPropMan.push_front(matchedMan[woman]);
+				
+				isWomanEng[woman]=true;
 				matchedWoman[man]=woman;
-				matchedMan[woman]=man;				
-				unPropMan.push_back(matchedMan[woman]);
+				matchedMan[woman]=man;
+								
+				unPropMan.remove(man);
 			}
 			else{
 			
 			}
 		}
 	}
-	 
+	 return matchedWoman;
 }
 
 	
