@@ -12,9 +12,9 @@ main <input-file> <out-file>
 There should be nothing printed on the terminal or contents of out-file
 in the following order. 
 
-### output spcification or out-file
+### output specification or out-file
  
-### input speciciation
+### input specifiation
 It must contains number of couples at first line. Followed by two n x n 
 matrices where the first matric represents the men's preference list,the
 next is women preference list. 
@@ -22,12 +22,18 @@ next is women preference list.
 n
 
 1 2 3 ... n 
+
 1 2 3 ... n
+
 .
+
 .
+
+
 1 2 3 ... n 
 
 1 2 3 ... n 
+
 1 2 3 ... n
 .
 .
