@@ -10,16 +10,18 @@ CXXFLAGS = -Wall -g
 # Targets needed to bring the executable up to date
 #
 #
-main: main.o GaleShapley.o
-	$(CXX) $(CXXFLAGS) -o main main.o GaleShapley.o
+main: main.o ETTree.o Node.o
+	$(CXX) $(CXXFLAGS) -o main main.o ETTree.o Node.o
 
 # The main.o target can be written more simply
 #
 
-main.o: main.cpp GaleShapley.h
+main.o: main.cpp ETTree.h Node.h
 	$(CXX) $(CXXFLAGS) -c main.cpp
 
-GaleShapley.o: GaleShapley.h
+Node.o: Node.h
+
+ETTree.o: ETTree.h Node.h
 
 clean:
 	rm *.o main 
